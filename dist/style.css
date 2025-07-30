@@ -200,11 +200,77 @@ body {
   padding: 0.5rem;
 }
 
+/* Category Styles */
+.selector-category {
+  margin-bottom: 1rem;
+}
+
+.category-header {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.category-header:hover {
+  background: #e2e8f0;
+  border-color: var(--primary-color);
+}
+
+.category-toggle {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  transition: transform 0.2s;
+}
+
+.category-icon {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.category-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.category-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.category-unused-count {
+  font-size: 0.75rem;
+  background: var(--warning-color);
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.category-content.expanded {
+  max-height: 2000px;
+  padding-top: 0.5rem;
+}
+
 .selector-item {
   border: 1px solid var(--border-color);
   border-radius: 0.375rem;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  padding: 0.5rem 0.75rem;
   background: var(--surface-color);
   transition: all 0.2s;
 }

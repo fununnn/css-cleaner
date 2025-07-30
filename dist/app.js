@@ -128,23 +128,62 @@ class CSSCleaner {
             return;
         }
 
-        const html = this.filteredSelectors.map(selector => {
-            const selectorData = this.selectors[selector];
-            const unusedClass = selectorData.unused ? 'unused' : '';
-            const activeClass = selectorData.active ? 'active' : 'inactive';
+        // Categorize selectors
+        const categories = this.categorizeSelectors(this.filteredSelectors);
+        
+        const categoryIcons = {
+            'Layout & Structure': '🏗️',
+            'Typography': '📝',
+            'Header': '🎯',
+            'Navigation': '🧭',
+            'Cards & Components': '📦',
+            'Buttons': '🔘',
+            'Forms': '📋',
+            'Footer': '⬇️',
+            'Utilities': '🔧',
+            'Animations': '✨',
+            'Responsive': '📱',
+            'Legacy/Unused': '🗑️',
+            'Other': '📄'
+        };
+
+        const html = Object.keys(categories).map(categoryName => {
+            const selectors = categories[categoryName];
+            const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-');
+            const unusedCount = selectors.filter(s => this.selectors[s].unused).length;
+            const icon = categoryIcons[categoryName] || '📄';
             
             return `
-                <div class="selector-item ${unusedClass} ${activeClass}">
-                    <label class="selector-label">
-                        <input type="checkbox" 
-                               ${selectorData.active ? 'checked' : ''} 
-                               data-selector="${selector}"
-                               class="selector-checkbox">
-                        <span class="selector-name">${selector}</span>
-                        ${selectorData.unused ? '<span class="unused-badge">❗</span>' : ''}
-                    </label>
-                    <div class="selector-info">
-                        <span class="file-info">Files: ${selectorData.files.join(', ')}</span>
+                <div class="selector-category">
+                    <div class="category-header" data-category="${categoryId}">
+                        <span class="category-toggle">▼</span>
+                        <span class="category-icon">${icon}</span>
+                        <span class="category-name">${categoryName}</span>
+                        <span class="category-count">(${selectors.length})</span>
+                        ${unusedCount > 0 ? `<span class="category-unused-count">${unusedCount} unused</span>` : ''}
+                    </div>
+                    <div class="category-content" id="category-${categoryId}">
+                        ${selectors.map(selector => {
+                            const selectorData = this.selectors[selector];
+                            const unusedClass = selectorData.unused ? 'unused' : '';
+                            const activeClass = selectorData.active ? 'active' : 'inactive';
+                            
+                            return `
+                                <div class="selector-item ${unusedClass} ${activeClass}">
+                                    <label class="selector-label">
+                                        <input type="checkbox" 
+                                               ${selectorData.active ? 'checked' : ''} 
+                                               data-selector="${selector}"
+                                               class="selector-checkbox">
+                                        <span class="selector-name">${selector}</span>
+                                        ${selectorData.unused ? '<span class="unused-badge">❗</span>' : ''}
+                                    </label>
+                                    <div class="selector-info">
+                                        <span class="file-info">Files: ${selectorData.files.join(', ')}</span>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
                     </div>
                 </div>
             `;
@@ -158,6 +197,188 @@ class CSSCleaner {
                 this.toggleSelector(e.target.dataset.selector, e.target.checked);
             });
         });
+
+        // Add event listeners to category headers
+        container.querySelectorAll('.category-header').forEach(header => {
+            header.addEventListener('click', (e) => {
+                this.toggleCategory(e.target.closest('.category-header').dataset.category);
+            });
+        });
+
+        // Collapse unused categories by default, keep used ones open
+        Object.keys(categories).forEach(categoryName => {
+            const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-');
+            const selectors = categories[categoryName];
+            const hasUsedSelectors = selectors.some(s => !this.selectors[s].unused);
+            
+            if (!hasUsedSelectors) {
+                this.toggleCategory(categoryId, false);
+            }
+        });
+    }
+
+    categorizeSelectors(selectors) {
+        const categories = {
+            'Layout & Structure': [],
+            'Typography': [],
+            'Header': [],
+            'Navigation': [],
+            'Cards & Components': [],
+            'Buttons': [],
+            'Forms': [],
+            'Footer': [],
+            'Utilities': [],
+            'Animations': [],
+            'Responsive': [],
+            'Legacy/Unused': [],
+            'Other': []
+        };
+
+        selectors.forEach(selector => {
+            const category = this.getSelectorCategory(selector);
+            categories[category].push(selector);
+        });
+
+        // Remove empty categories
+        Object.keys(categories).forEach(key => {
+            if (categories[key].length === 0) {
+                delete categories[key];
+            }
+        });
+
+        return categories;
+    }
+
+    getSelectorCategory(selector) {
+        const selectorData = this.selectors[selector];
+        const name = selector.toLowerCase();
+
+        // Check if it's unused first
+        if (selectorData.unused) {
+            // But still categorize properly for better organization
+            if (name.includes('old-') || name.includes('deprecated-') || name.includes('legacy-') || 
+                name.includes('unused-') || name.includes('beta-') || name.includes('temp-') ||
+                name.includes('debug-') || name.includes('experimental-')) {
+                return 'Legacy/Unused';
+            }
+        }
+
+        // Layout & Structure
+        if (name.includes('container') || name.includes('wrapper') || name.includes('layout') ||
+            name.includes('grid') || name.includes('row') || name.includes('col') ||
+            name.includes('section') || name.includes('main') || name.includes('sidebar') ||
+            name.includes('content') || name.includes('app-') || name.includes('page-') ||
+            selector === '*' || selector === 'body' || selector === 'html' ||
+            name.includes('inner') || name.includes('outer') || name.includes('flex')) {
+            return 'Layout & Structure';
+        }
+
+        // Navigation
+        if (name.includes('nav') || name.includes('menu') || name.includes('breadcrumb') ||
+            (name.includes('link') && !name.includes('footer-link')) || 
+            name.includes('primary-nav') || name.includes('secondary-nav')) {
+            return 'Navigation';
+        }
+
+        // Header
+        if (name.includes('header') || name.includes('masthead') || name.includes('site-branding') ||
+            name.includes('logo') || name.includes('brand') || name.includes('site-title') ||
+            name.includes('site-description') || name.includes('hero-') || name.includes('banner-')) {
+            return 'Header';
+        }
+
+        // Footer
+        if (name.includes('footer') || name.includes('colophon') || name.includes('site-info') ||
+            name.includes('copyright') || name.includes('footer-')) {
+            return 'Footer';
+        }
+
+        // Forms
+        if (name.includes('form') || name.includes('input') || name.includes('search') ||
+            name.includes('field') || name.includes('submit') || name.includes('textarea') ||
+            name.includes('select') || name.includes('checkbox') || name.includes('radio') ||
+            name.includes('label') || name.includes('form-') || name.includes('contact-')) {
+            return 'Forms';
+        }
+
+        // Buttons
+        if (name.includes('btn') || name.includes('button') || name.includes('cta') ||
+            name.includes('btn-') || name.includes('button-')) {
+            return 'Buttons';
+        }
+
+        // Cards & Components
+        if (name.includes('card') || name.includes('widget') || name.includes('component') ||
+            name.includes('modal') || name.includes('dropdown') || name.includes('accordion') ||
+            name.includes('tab') || name.includes('alert') || name.includes('badge') ||
+            name.includes('tooltip') || name.includes('popover') || name.includes('progress') ||
+            name.includes('panel') || name.includes('box') || name.includes('media-') ||
+            name.includes('feature-') || name.includes('stat-') || name.includes('team-')) {
+            return 'Cards & Components';
+        }
+
+        // Typography
+        if (/^h[1-6]$/.test(selector) || name.includes('title') || name.includes('heading') ||
+            name.includes('text') || name.includes('font') || name.includes('lead') ||
+            name.includes('subtitle') || name.includes('description') || name.includes('excerpt') ||
+            name.includes('quote') || name.includes('blockquote') || name.includes('intro') ||
+            name.includes('-title') || name.includes('-heading') || selector === 'p') {
+            return 'Typography';
+        }
+
+        // Utilities
+        if (name.includes('hidden') || name.includes('visible') || name.includes('sr-only') ||
+            name.includes('clearfix') || name.includes('center') || name.includes('left') ||
+            name.includes('right') || name.includes('margin') || name.includes('padding') ||
+            name.includes('border') || name.includes('shadow') || name.includes('text-') ||
+            name.includes('bg-') || name.includes('d-') || name.includes('position-') ||
+            name.includes('overflow-') || name.includes('display-')) {
+            return 'Utilities';
+        }
+
+        // Animations
+        if (name.includes('animate') || name.includes('transition') || name.includes('fade') ||
+            name.includes('slide') || name.includes('spin') || name.includes('pulse') ||
+            name.includes('bounce') || name.includes('hover') || name.includes(':hover') ||
+            name.includes('transform') || name.includes('scale') || name.includes('rotate')) {
+            return 'Animations';
+        }
+
+        // Responsive
+        if (name.includes('mobile') || name.includes('tablet') || name.includes('desktop') ||
+            name.includes('responsive') || name.includes('xs-') || name.includes('sm-') ||
+            name.includes('md-') || name.includes('lg-') || name.includes('xl-') ||
+            name.match(/@media/) || name.includes('breakpoint')) {
+            return 'Responsive';
+        }
+
+        return 'Other';
+    }
+
+    toggleCategory(categoryId, forceState = null) {
+        const categoryContent = document.getElementById(`category-${categoryId}`);
+        const categoryHeader = document.querySelector(`[data-category="${categoryId}"]`);
+        const toggle = categoryHeader.querySelector('.category-toggle');
+        
+        if (forceState !== null) {
+            // Force specific state
+            if (forceState) {
+                categoryContent.classList.add('expanded');
+                toggle.textContent = '▼';
+            } else {
+                categoryContent.classList.remove('expanded');
+                toggle.textContent = '▶';
+            }
+        } else {
+            // Toggle current state
+            if (categoryContent.classList.contains('expanded')) {
+                categoryContent.classList.remove('expanded');
+                toggle.textContent = '▶';
+            } else {
+                categoryContent.classList.add('expanded');
+                toggle.textContent = '▼';
+            }
+        }
     }
 
     async toggleSelector(selector, active) {
