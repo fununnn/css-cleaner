@@ -1,0 +1,27 @@
+/* Enterprise Application Main Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; }
+.app-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+.app-header { background: #2c3e50; color: white; padding: 1rem 0; }
+.header-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+.app-title { font-size: 1.8rem; font-weight: 300; }
+.primary-nav { display: flex; gap: 2rem; }
+.nav-item { color: #bdc3c7; text-decoration: none; font-weight: 500; }
+.nav-item:hover, .nav-item.active { color: #3498db; }
+.app-main { flex: 1; padding: 2rem 0; }
+.main-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+.dashboard-section { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.section-title { font-size: 1.5rem; color: #2c3e50; margin-bottom: 1.5rem; }
+.dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.dashboard-card { background: #ecf0f1; padding: 1.5rem; border-radius: 6px; text-align: center; }
+.card-title { font-size: 0.9rem; color: #7f8c8d; text-transform: uppercase; margin-bottom: 0.5rem; }
+.card-value { font-size: 2rem; font-weight: 700; color: #2c3e50; }
+
+/* UNUSED ENTERPRISE STYLES */
+.legacy-sidebar { position: fixed; left: -300px; width: 300px; height: 100vh; background: #34495e; }
+.old-dashboard { background: linear-gradient(45deg, #3498db, #2980b9); }
+.deprecated-modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; }
+.admin-panel { border: 3px solid red; background: rgba(255,0,0,0.1); padding: 2rem; }
+.beta-feature { opacity: 0.5; pointer-events: none; }
+.ie-support { display: none; }
+.mobile-app-banner { background: #e74c3c; color: white; text-align: center; padding: 1rem; }

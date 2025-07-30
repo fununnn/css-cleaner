@@ -1,0 +1,1543 @@
+{
+  "timestamp": "2025-07-30T02:28:25.146Z",
+  "projectRoot": "/home/ubuntu/doc/css-cleaner/test-site",
+  "selectors": {
+    "*": {
+      "unused": false,
+      "active": true,
+      "css": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "body": {
+      "unused": false,
+      "active": true,
+      "css": "body {\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n  line-height: 1.6;\n  color: #333;\n  background-color: #fff;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".container": {
+      "unused": false,
+      "active": true,
+      "css": ".container {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 20px;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h1": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h2": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h3": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h4": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h5": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    "h6": {
+      "unused": false,
+      "active": true,
+      "css": "h1, h2, h3, h4, h5, h6 {\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".section-title": {
+      "unused": false,
+      "active": true,
+      "css": ".section-title {\n  font-size: 2.5rem;\n  text-align: center;\n  margin-bottom: 3rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".page-title": {
+      "unused": false,
+      "active": true,
+      "css": ".page-title {\n  font-size: 3rem;\n  color: #2c3e50;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".page-subtitle": {
+      "unused": false,
+      "active": true,
+      "css": ".page-subtitle {\n  font-size: 1.25rem;\n  color: #7f8c8d;\n  text-align: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".header": {
+      "unused": false,
+      "active": true,
+      "css": ".header {\n  background: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\n  position: sticky;\n  top: 0;\n  z-index: 1000;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".navbar": {
+      "unused": false,
+      "active": true,
+      "css": ".navbar {\n  padding: 1rem 0;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".navbar .container": {
+      "unused": false,
+      "active": true,
+      "css": ".navbar .container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-brand .logo": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-brand .logo {\n  font-size: 1.8rem;\n  font-weight: 700;\n  color: #3498db;\n  margin: 0;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-menu": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-menu {\n  display: flex;\n  list-style: none;\n  gap: 2rem;\n}\n.nav-menu {\n    display: none;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-item": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-item {\n  position: relative;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-link": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-link {\n  text-decoration: none;\n  color: #333;\n  font-weight: 500;\n  transition: color 0.3s ease;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-link:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-link:hover,\n.nav-link.active {\n  color: #3498db;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-link.active": {
+      "unused": false,
+      "active": true,
+      "css": ".nav-link:hover,\n.nav-link.active {\n  color: #3498db;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".mobile-menu-toggle": {
+      "unused": false,
+      "active": true,
+      "css": ".mobile-menu-toggle {\n  display: none;\n  background: none;\n  border: none;\n  font-size: 1.5rem;\n  cursor: pointer;\n}\n.mobile-menu-toggle {\n    display: block;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".hero": {
+      "unused": false,
+      "active": true,
+      "css": ".hero {\n  padding: 5rem 0;\n  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n  color: white;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".hero .container": {
+      "unused": false,
+      "active": true,
+      "css": ".hero .container {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 4rem;\n  align-items: center;\n}\n.hero .container {\n    grid-template-columns: 1fr;\n    text-align: center;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".hero-title": {
+      "unused": false,
+      "active": true,
+      "css": ".hero-title {\n  font-size: 3.5rem;\n  font-weight: 700;\n  margin-bottom: 1.5rem;\n  line-height: 1.2;\n}\n.hero-title {\n    font-size: 2.5rem;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".hero-subtitle": {
+      "unused": false,
+      "active": true,
+      "css": ".hero-subtitle {\n  font-size: 1.25rem;\n  margin-bottom: 2rem;\n  opacity: 0.9;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".hero-actions": {
+      "unused": false,
+      "active": true,
+      "css": ".hero-actions {\n  display: flex;\n  gap: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".placeholder-image": {
+      "unused": false,
+      "active": true,
+      "css": ".placeholder-image {\n  width: 100%;\n  height: 300px;\n  background: rgba(255,255,255,0.1);\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 4rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".placeholder-image.large": {
+      "unused": false,
+      "active": true,
+      "css": ".placeholder-image.large {\n  height: 400px;\n  font-size: 6rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn": {
+      "unused": false,
+      "active": true,
+      "css": ".btn {\n  display: inline-block;\n  padding: 12px 24px;\n  border-radius: 6px;\n  text-decoration: none;\n  font-weight: 600;\n  text-align: center;\n  transition: all 0.3s ease;\n  border: 2px solid transparent;\n  cursor: pointer;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-primary": {
+      "unused": false,
+      "active": true,
+      "css": ".btn-primary {\n  background: #3498db;\n  color: white;\n  border-color: #3498db;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-primary:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".btn-primary:hover {\n  background: #2980b9;\n  border-color: #2980b9;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-outline": {
+      "unused": false,
+      "active": true,
+      "css": ".btn-outline {\n  background: transparent;\n  color: white;\n  border-color: white;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-outline:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".btn-outline:hover {\n  background: white;\n  color: #3498db;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-secondary": {
+      "unused": true,
+      "active": false,
+      "css": ".btn-secondary {\n  background: #95a5a6;\n  color: white;\n  border-color: #95a5a6;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".btn-secondary:hover": {
+      "unused": true,
+      "active": false,
+      "css": ".btn-secondary:hover {\n  background: #7f8c8d;\n  border-color: #7f8c8d;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".features": {
+      "unused": false,
+      "active": true,
+      "css": ".features {\n  padding: 5rem 0;\n  background: #f8f9fa;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".features-grid": {
+      "unused": false,
+      "active": true,
+      "css": ".features-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".feature-card": {
+      "unused": false,
+      "active": true,
+      "css": ".feature-card {\n  background: white;\n  padding: 2rem;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0,0,0,0.1);\n  text-align: center;\n  transition: transform 0.3s ease;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".feature-card:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".feature-card:hover {\n  transform: translateY(-5px);\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".feature-icon": {
+      "unused": false,
+      "active": true,
+      "css": ".feature-icon {\n  font-size: 3rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".feature-title": {
+      "unused": false,
+      "active": true,
+      "css": ".feature-title {\n  font-size: 1.5rem;\n  margin-bottom: 1rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".feature-description": {
+      "unused": false,
+      "active": true,
+      "css": ".feature-description {\n  color: #7f8c8d;\n  line-height: 1.6;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".page-header": {
+      "unused": false,
+      "active": true,
+      "css": ".page-header {\n  padding: 4rem 0;\n  background: #2c3e50;\n  color: white;\n  text-align: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".about-content": {
+      "unused": false,
+      "active": true,
+      "css": ".about-content,\n.team-section,\n.values-section {\n  padding: 4rem 0;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".team-section": {
+      "unused": false,
+      "active": true,
+      "css": ".about-content,\n.team-section,\n.values-section {\n  padding: 4rem 0;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".values-section": {
+      "unused": false,
+      "active": true,
+      "css": ".about-content,\n.team-section,\n.values-section {\n  padding: 4rem 0;\n}\n.values-section {\n  background: #f8f9fa;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".content-grid": {
+      "unused": false,
+      "active": true,
+      "css": ".content-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 4rem;\n  align-items: center;\n}\n.content-grid {\n    grid-template-columns: 1fr;\n    gap: 2rem;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".content-title": {
+      "unused": false,
+      "active": true,
+      "css": ".content-title {\n  font-size: 2rem;\n  margin-bottom: 1.5rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".content-paragraph": {
+      "unused": false,
+      "active": true,
+      "css": ".content-paragraph {\n  margin-bottom: 1.5rem;\n  color: #555;\n  line-height: 1.8;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".team-grid": {
+      "unused": false,
+      "active": true,
+      "css": ".team-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".team-member": {
+      "unused": false,
+      "active": true,
+      "css": ".team-member {\n  text-align: center;\n  padding: 2rem;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0,0,0,0.1);\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".member-photo": {
+      "unused": false,
+      "active": true,
+      "css": ".member-photo {\n  font-size: 4rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".member-name": {
+      "unused": false,
+      "active": true,
+      "css": ".member-name {\n  font-size: 1.25rem;\n  margin-bottom: 0.5rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".member-role": {
+      "unused": false,
+      "active": true,
+      "css": ".member-role {\n  color: #3498db;\n  font-weight: 600;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".member-bio": {
+      "unused": false,
+      "active": true,
+      "css": ".member-bio {\n  color: #7f8c8d;\n  font-size: 0.9rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".values-list": {
+      "unused": false,
+      "active": true,
+      "css": ".values-list {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".value-item": {
+      "unused": false,
+      "active": true,
+      "css": ".value-item {\n  text-align: center;\n  padding: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".value-icon": {
+      "unused": false,
+      "active": true,
+      "css": ".value-icon {\n  font-size: 3rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".value-title": {
+      "unused": false,
+      "active": true,
+      "css": ".value-title {\n  font-size: 1.5rem;\n  margin-bottom: 1rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".value-description": {
+      "unused": false,
+      "active": true,
+      "css": ".value-description {\n  color: #7f8c8d;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".testimonials": {
+      "unused": false,
+      "active": true,
+      "css": ".testimonials {\n  padding: 5rem 0;\n  background: #2c3e50;\n  color: white;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".testimonials-slider": {
+      "unused": false,
+      "active": true,
+      "css": ".testimonials-slider {\n  max-width: 800px;\n  margin: 0 auto;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".testimonial-card": {
+      "unused": false,
+      "active": true,
+      "css": ".testimonial-card {\n  text-align: center;\n  padding: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".testimonial-quote": {
+      "unused": false,
+      "active": true,
+      "css": ".testimonial-quote {\n  font-size: 1.5rem;\n  font-style: italic;\n  margin-bottom: 2rem;\n  line-height: 1.6;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".testimonial-author": {
+      "unused": false,
+      "active": true,
+      "css": ".testimonial-author {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".author-avatar": {
+      "unused": false,
+      "active": true,
+      "css": ".author-avatar {\n  width: 60px;\n  height: 60px;\n  background: #3498db;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 700;\n  font-size: 1.2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".author-info": {
+      "unused": false,
+      "active": true,
+      "css": ".author-info {\n  text-align: left;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".author-name": {
+      "unused": false,
+      "active": true,
+      "css": ".author-name {\n  display: block;\n  font-weight: 600;\n  margin-bottom: 0.25rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".author-title": {
+      "unused": false,
+      "active": true,
+      "css": ".author-title {\n  display: block;\n  opacity: 0.8;\n  font-size: 0.9rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".newsletter": {
+      "unused": false,
+      "active": true,
+      "css": ".newsletter {\n  padding: 4rem 0;\n  background: #3498db;\n  color: white;\n  text-align: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".newsletter-title": {
+      "unused": false,
+      "active": true,
+      "css": ".newsletter-title {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".newsletter-description": {
+      "unused": false,
+      "active": true,
+      "css": ".newsletter-description {\n  font-size: 1.1rem;\n  margin-bottom: 2rem;\n  opacity: 0.9;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".newsletter-form": {
+      "unused": false,
+      "active": true,
+      "css": ".newsletter-form {\n  display: flex;\n  gap: 1rem;\n  max-width: 400px;\n  margin: 0 auto;\n}\n.newsletter-form {\n    flex-direction: column;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".newsletter-input": {
+      "unused": false,
+      "active": true,
+      "css": ".newsletter-input {\n  flex: 1;\n  padding: 12px 16px;\n  border: none;\n  border-radius: 6px;\n  font-size: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer": {
+      "unused": false,
+      "active": true,
+      "css": ".footer {\n  background: #2c3e50;\n  color: white;\n  padding: 3rem 0 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-content": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-content {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 2rem;\n  margin-bottom: 2rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-title": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-title {\n  font-size: 1.25rem;\n  margin-bottom: 1rem;\n  color: #3498db;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-text": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-text {\n  margin-bottom: 0.5rem;\n  opacity: 0.8;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-links": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-links {\n  list-style: none;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-links li": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-links li {\n  margin-bottom: 0.5rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-link": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-link {\n  color: white;\n  text-decoration: none;\n  opacity: 0.8;\n  transition: opacity 0.3s ease;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-link:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-link:hover {\n  opacity: 1;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".social-links": {
+      "unused": false,
+      "active": true,
+      "css": ".social-links {\n  display: flex;\n  gap: 1rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".social-link": {
+      "unused": false,
+      "active": true,
+      "css": ".social-link {\n  color: white;\n  text-decoration: none;\n  opacity: 0.8;\n  transition: opacity 0.3s ease;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".social-link:hover": {
+      "unused": false,
+      "active": true,
+      "css": ".social-link:hover {\n  opacity: 1;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".footer-bottom": {
+      "unused": false,
+      "active": true,
+      "css": ".footer-bottom {\n  border-top: 1px solid #34495e;\n  padding-top: 1rem;\n  text-align: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".copyright": {
+      "unused": false,
+      "active": true,
+      "css": ".copyright {\n  opacity: 0.6;\n  font-size: 0.9rem;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".old-banner": {
+      "unused": true,
+      "active": false,
+      "css": ".old-banner {\n  background: #e74c3c;\n  padding: 20px;\n  color: white;\n  text-align: center;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".deprecated-button": {
+      "unused": true,
+      "active": false,
+      "css": ".deprecated-button {\n  background: #f39c12;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 4px;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".unused-modal": {
+      "unused": true,
+      "active": false,
+      "css": ".unused-modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0,0,0,0.5);\n  z-index: 9999;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".legacy-sidebar": {
+      "unused": true,
+      "active": false,
+      "css": ".legacy-sidebar {\n  width: 300px;\n  background: #ecf0f1;\n  height: 100vh;\n  position: fixed;\n  left: -300px;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".old-grid-system": {
+      "unused": true,
+      "active": false,
+      "css": ".old-grid-system {\n  display: flex;\n  flex-wrap: wrap;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-1": {
+      "unused": true,
+      "active": false,
+      "css": ".col-1 { width: 8.33%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-2": {
+      "unused": true,
+      "active": false,
+      "css": ".col-2 { width: 16.66%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-3": {
+      "unused": true,
+      "active": false,
+      "css": ".col-3 { width: 25%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-4": {
+      "unused": true,
+      "active": false,
+      "css": ".col-4 { width: 33.33%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-5": {
+      "unused": true,
+      "active": false,
+      "css": ".col-5 { width: 41.66%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".col-6": {
+      "unused": true,
+      "active": false,
+      "css": ".col-6 { width: 50%; }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".debug-border": {
+      "unused": true,
+      "active": false,
+      "css": ".debug-border {\n  border: 2px solid red !important;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".temp-highlight": {
+      "unused": true,
+      "active": false,
+      "css": ".temp-highlight {\n  background: yellow;\n  color: black;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".experimental-layout": {
+      "unused": true,
+      "active": false,
+      "css": ".experimental-layout {\n  display: grid;\n  grid-template-areas: \n    \"header header\"\n    \"sidebar main\"\n    \"footer footer\";\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".beta-feature": {
+      "unused": true,
+      "active": false,
+      "css": ".beta-feature {\n  opacity: 0.5;\n  pointer-events: none;\n}\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".mobile-only-banner": {
+      "unused": true,
+      "active": false,
+      "css": ".mobile-only-banner {\n    background: #9b59b6;\n    padding: 15px;\n    text-align: center;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".old-mobile-nav": {
+      "unused": true,
+      "active": false,
+      "css": ".old-mobile-nav {\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: white;\n    border-top: 1px solid #ddd;\n  }\n",
+      "files": [
+        "style.css"
+      ],
+      "usedIn": []
+    },
+    ".card": {
+      "unused": true,
+      "active": false,
+      "css": ".card {\n  background: white;\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n  padding: 1.5rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".card-header": {
+      "unused": true,
+      "active": false,
+      "css": ".card-header {\n  border-bottom: 1px solid #eee;\n  padding-bottom: 1rem;\n  margin-bottom: 1rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".card-title": {
+      "unused": true,
+      "active": false,
+      "css": ".card-title {\n  margin: 0;\n  font-size: 1.25rem;\n  color: #2c3e50;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".card-body": {
+      "unused": true,
+      "active": false,
+      "css": ".card-body {\n  color: #555;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".alert": {
+      "unused": true,
+      "active": false,
+      "css": ".alert {\n  padding: 1rem;\n  border-radius: 4px;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".alert-success": {
+      "unused": true,
+      "active": false,
+      "css": ".alert-success {\n  background: #d4edda;\n  color: #155724;\n  border-color: #c3e6cb;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".alert-warning": {
+      "unused": true,
+      "active": false,
+      "css": ".alert-warning {\n  background: #fff3cd;\n  color: #856404;\n  border-color: #ffeaa7;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".alert-error": {
+      "unused": true,
+      "active": false,
+      "css": ".alert-error {\n  background: #f8d7da;\n  color: #721c24;\n  border-color: #f5c6cb;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".alert-info": {
+      "unused": true,
+      "active": false,
+      "css": ".alert-info {\n  background: #cce7ff;\n  color: #004085;\n  border-color: #b8daff;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".badge": {
+      "unused": true,
+      "active": false,
+      "css": ".badge {\n  display: inline-block;\n  padding: 0.25rem 0.5rem;\n  font-size: 0.75rem;\n  font-weight: 700;\n  line-height: 1;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: 0.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".badge-primary": {
+      "unused": true,
+      "active": false,
+      "css": ".badge-primary {\n  color: #fff;\n  background-color: #007bff;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".badge-secondary": {
+      "unused": true,
+      "active": false,
+      "css": ".badge-secondary {\n  color: #fff;\n  background-color: #6c757d;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".badge-success": {
+      "unused": true,
+      "active": false,
+      "css": ".badge-success {\n  color: #fff;\n  background-color: #28a745;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".badge-danger": {
+      "unused": true,
+      "active": false,
+      "css": ".badge-danger {\n  color: #fff;\n  background-color: #dc3545;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown {\n  position: relative;\n  display: inline-block;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown-toggle": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown-toggle {\n  background: #007bff;\n  color: white;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 4px;\n  cursor: pointer;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown-menu": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown-menu {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  min-width: 160px;\n  background: white;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  box-shadow: 0 2px 8px rgba(0,0,0,0.15);\n  z-index: 1000;\n  display: none;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown-menu.show": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown-menu.show {\n  display: block;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown-item": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown-item {\n  display: block;\n  width: 100%;\n  padding: 0.5rem 1rem;\n  color: #212529;\n  text-decoration: none;\n  background: transparent;\n  border: none;\n  text-align: left;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".dropdown-item:hover": {
+      "unused": true,
+      "active": false,
+      "css": ".dropdown-item:hover {\n  background: #f8f9fa;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-backdrop": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-backdrop {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0,0,0,0.5);\n  z-index: 1040;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal": {
+      "unused": true,
+      "active": false,
+      "css": ".modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1050;\n  display: none;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal.show": {
+      "unused": true,
+      "active": false,
+      "css": ".modal.show {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-dialog": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-dialog {\n  max-width: 500px;\n  width: 90%;\n  background: white;\n  border-radius: 8px;\n  box-shadow: 0 4px 16px rgba(0,0,0,0.15);\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-header": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-header {\n  padding: 1rem;\n  border-bottom: 1px solid #dee2e6;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-title": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-title {\n  margin: 0;\n  font-size: 1.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-close": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-close {\n  background: none;\n  border: none;\n  font-size: 1.5rem;\n  cursor: pointer;\n  padding: 0;\n  width: 2rem;\n  height: 2rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-body": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-body {\n  padding: 1rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".modal-footer": {
+      "unused": true,
+      "active": false,
+      "css": ".modal-footer {\n  padding: 1rem;\n  border-top: 1px solid #dee2e6;\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.5rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".progress": {
+      "unused": true,
+      "active": false,
+      "css": ".progress {\n  height: 1rem;\n  background: #e9ecef;\n  border-radius: 0.5rem;\n  overflow: hidden;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".progress-bar": {
+      "unused": true,
+      "active": false,
+      "css": ".progress-bar {\n  height: 100%;\n  background: #007bff;\n  transition: width 0.6s ease;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".progress-bar-success": {
+      "unused": true,
+      "active": false,
+      "css": ".progress-bar-success {\n  background: #28a745;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".progress-bar-warning": {
+      "unused": true,
+      "active": false,
+      "css": ".progress-bar-warning {\n  background: #ffc107;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".progress-bar-danger": {
+      "unused": true,
+      "active": false,
+      "css": ".progress-bar-danger {\n  background: #dc3545;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-tabs": {
+      "unused": true,
+      "active": false,
+      "css": ".nav-tabs {\n  border-bottom: 1px solid #dee2e6;\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-tab": {
+      "unused": true,
+      "active": false,
+      "css": ".nav-tab {\n  padding: 0.5rem 1rem;\n  border: 1px solid transparent;\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n  color: #007bff;\n  text-decoration: none;\n  cursor: pointer;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".nav-tab.active": {
+      "unused": true,
+      "active": false,
+      "css": ".nav-tab.active {\n  color: #495057;\n  background: #fff;\n  border-color: #dee2e6 #dee2e6 #fff;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tab-content": {
+      "unused": true,
+      "active": false,
+      "css": ".tab-content {\n  padding: 1rem 0;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tab-pane": {
+      "unused": true,
+      "active": false,
+      "css": ".tab-pane {\n  display: none;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tab-pane.active": {
+      "unused": true,
+      "active": false,
+      "css": ".tab-pane.active {\n  display: block;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion {\n  border: 1px solid #dee2e6;\n  border-radius: 0.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-item": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-item {\n  border-bottom: 1px solid #dee2e6;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-item:last-child": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-item:last-child {\n  border-bottom: none;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-header": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-header {\n  padding: 1rem;\n  background: #f8f9fa;\n  cursor: pointer;\n  border: none;\n  width: 100%;\n  text-align: left;\n  font-weight: 500;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-header:hover": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-header:hover {\n  background: #e9ecef;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-body": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-body {\n  padding: 1rem;\n  display: none;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".accordion-body.show": {
+      "unused": true,
+      "active": false,
+      "css": ".accordion-body.show {\n  display: block;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tooltip": {
+      "unused": true,
+      "active": false,
+      "css": ".tooltip {\n  position: absolute;\n  z-index: 1070;\n  display: none;\n  font-size: 0.875rem;\n  word-wrap: break-word;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tooltip.show": {
+      "unused": true,
+      "active": false,
+      "css": ".tooltip.show {\n  display: block;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".tooltip-inner": {
+      "unused": true,
+      "active": false,
+      "css": ".tooltip-inner {\n  max-width: 200px;\n  padding: 0.25rem 0.5rem;\n  color: #fff;\n  text-align: center;\n  background: rgba(0,0,0,0.9);\n  border-radius: 0.375rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".pagination": {
+      "unused": true,
+      "active": false,
+      "css": ".pagination {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  border-radius: 0.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".page-item": {
+      "unused": true,
+      "active": false,
+      "css": ".page-item {\n  margin: 0 2px;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".page-link": {
+      "unused": true,
+      "active": false,
+      "css": ".page-link {\n  position: relative;\n  display: block;\n  padding: 0.5rem 0.75rem;\n  color: #007bff;\n  text-decoration: none;\n  background: #fff;\n  border: 1px solid #dee2e6;\n  border-radius: 0.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".page-link:hover": {
+      "unused": true,
+      "active": false,
+      "css": ".page-link:hover {\n  color: #0056b3;\n  background: #e9ecef;\n  border-color: #dee2e6;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".page-item.active .page-link": {
+      "unused": true,
+      "active": false,
+      "css": ".page-item.active .page-link {\n  color: #fff;\n  background: #007bff;\n  border-color: #007bff;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".page-item.disabled .page-link": {
+      "unused": true,
+      "active": false,
+      "css": ".page-item.disabled .page-link {\n  color: #6c757d;\n  background: #fff;\n  border-color: #dee2e6;\n  cursor: not-allowed;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".breadcrumb": {
+      "unused": true,
+      "active": false,
+      "css": ".breadcrumb {\n  display: flex;\n  flex-wrap: wrap;\n  padding: 0.75rem 1rem;\n  margin-bottom: 1rem;\n  list-style: none;\n  background: #e9ecef;\n  border-radius: 0.25rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".breadcrumb-item": {
+      "unused": true,
+      "active": false,
+      "css": ".breadcrumb-item {\n  display: flex;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".breadcrumb-item + .breadcrumb-item": {
+      "unused": true,
+      "active": false,
+      "css": ".breadcrumb-item + .breadcrumb-item {\n  padding-left: 0.5rem;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".breadcrumb-item + .breadcrumb-item::before": {
+      "unused": true,
+      "active": false,
+      "css": ".breadcrumb-item + .breadcrumb-item::before {\n  display: inline-block;\n  padding-right: 0.5rem;\n  color: #6c757d;\n  content: \"/\";\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".breadcrumb-item.active": {
+      "unused": true,
+      "active": false,
+      "css": ".breadcrumb-item.active {\n  color: #6c757d;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".spinner": {
+      "unused": true,
+      "active": false,
+      "css": ".spinner {\n  display: inline-block;\n  width: 2rem;\n  height: 2rem;\n  vertical-align: text-bottom;\n  border: 0.25em solid currentColor;\n  border-right-color: transparent;\n  border-radius: 50%;\n  animation: spinner-border 0.75s linear infinite;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    "to": {
+      "unused": false,
+      "active": true,
+      "css": "to {\n    transform: rotate(360deg);\n  }\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    },
+    ".spinner-sm": {
+      "unused": true,
+      "active": false,
+      "css": ".spinner-sm {\n  width: 1rem;\n  height: 1rem;\n  border-width: 0.125em;\n}\n",
+      "files": [
+        "components.css"
+      ],
+      "usedIn": []
+    }
+  },
+  "stats": {
+    "total": 169,
+    "unused": 82,
+    "disabled": 82,
+    "used": 87
+  },
+  "files": {
+    "html": [
+      "index.html",
+      "pages/about.html"
+    ],
+    "css": [
+      "assets/css/style.css",
+      "assets/css/components.css"
+    ]
+  }
+}

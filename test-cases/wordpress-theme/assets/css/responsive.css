@@ -1,0 +1,251 @@
+/* Responsive Styles for WordPress Theme */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-navigation {
+        float: none;
+        margin-top: 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .site-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .widget-area {
+        max-width: none;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-banner {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .entry-title {
+        font-size: 1.8rem;
+    }
+    
+    .post-content {
+        padding: 1rem;
+    }
+    
+    .widget {
+        padding: 1rem;
+    }
+    
+    .site-footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .posts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .site-content {
+        gap: 3rem;
+    }
+}
+
+/* UNUSED RESPONSIVE STYLES - Should be detected as unused */
+@media (max-width: 600px) {
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        background: white;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .landscape-header {
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    .landscape-content {
+        margin-top: 60px;
+    }
+}
+
+@media print {
+    .print-hidden {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    .print-page-break {
+        page-break-before: always;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .no-animation * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode-body {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .dark-mode-header {
+        background: #2d2d2d;
+        border-bottom-color: #404040;
+    }
+    
+    .dark-mode-widget {
+        background: #2d2d2d;
+        border-color: #404040;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .retina-image {
+        background-image: url('images/logo@2x.png');
+        background-size: 100px 50px;
+    }
+    
+    .retina-border {
+        border-width: 0.5px;
+    }
+}
+
+/* Unused breakpoints */
+@media (min-width: 1600px) {
+    .ultra-wide-container {
+        max-width: 1800px;
+    }
+    
+    .ultra-wide-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .tiny-mobile {
+        font-size: 12px;
+    }
+    
+    .tiny-mobile-hide {
+        display: none;
+    }
+}

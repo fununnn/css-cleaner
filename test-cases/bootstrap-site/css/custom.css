@@ -1,0 +1,146 @@
+/* Bootstrap Custom Overrides */
+
+/* Used styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hero-section .btn {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Unused styles - these should be detected as unused */
+.old-jumbotron {
+    background-color: #e9ecef;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.deprecated-alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+}
+
+.unused-sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+}
+
+.legacy-buttons {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+}
+
+.old-grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,0,0,0.1);
+    pointer-events: none;
+}
+
+.beta-feature-banner {
+    background: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.debug-outline * {
+    outline: 1px solid red !important;
+}
+
+.maintenance-mode {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Unused responsive utilities */
+@media (max-width: 576px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    .mobile-only-header {
+        background: #6c757d;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .xxl-container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* Unused animation classes */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}

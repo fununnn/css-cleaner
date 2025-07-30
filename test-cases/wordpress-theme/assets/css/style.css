@@ -1,0 +1,360 @@
+/* WordPress Theme Style.css */
+
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.site-branding {
+    display: inline-block;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.site-title a {
+    color: #2c5aa0;
+    text-decoration: none;
+}
+
+.site-description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+.main-navigation {
+    float: right;
+    margin-top: 1rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-item a:hover,
+.current-menu-item a {
+    color: #2c5aa0;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.site-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.content-area {
+    flex: 2;
+}
+
+.widget-area {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #2c5aa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #1e3f73;
+}
+
+/* Posts Grid */
+.featured-posts {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c5aa0;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: #2c5aa0;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: #2c5aa0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Single Post Styles */
+.single-post-content .entry-header {
+    margin-bottom: 2rem;
+}
+
+.entry-title {
+    font-size: 2.5rem;
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+}
+
+.entry-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.entry-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.entry-content h2 {
+    color: #2c5aa0;
+    margin: 2rem 0 1rem;
+}
+
+.entry-content h3 {
+    color: #333;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.featured-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.wp-block-quote {
+    border-left: 4px solid #2c5aa0;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.content-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.highlight-box {
+    background: #e3f2fd;
+    border: 1px solid #2196f3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.highlight-box h4 {
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+}
+
+/* UNUSED STYLES - These should be detected as unused */
+.old-header-style {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+}
+
+.deprecated-sidebar {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.legacy-post-format {
+    border: 2px dashed #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.unused-widget-style {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.old-comment-style {
+    background: #fffbf0;
+    border-left: 5px solid #ffa500;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.beta-navigation {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    background: #2c3e50;
+    transition: left 0.3s;
+}
+
+.maintenance-banner {
+    background: #ff4444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.debug-mode * {
+    outline: 1px solid red !important;
+}
+
+.admin-only-section {
+    background: rgba(255,0,0,0.1);
+    border: 2px solid red;
+    padding: 1rem;
+    display: none;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+.rtl-support {
+    direction: rtl;
+    text-align: right;
+}
+
+.accessibility-mode {
+    font-size: 1.5rem;
+    line-height: 2;
+    high-contrast: 1;
+}

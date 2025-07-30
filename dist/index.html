@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cleaner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🧹 CSS Cleaner</h1>
+            <p class="subtitle">Efficiently detect and remove unused CSS selectors</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-count">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="unused-count">0</span>
+                    <span class="stat-label">Unused</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="active-count">0</span>
+                    <span class="stat-label">Active</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="disabled-count">0</span>
+                    <span class="stat-label">Disabled</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="controls">
+                    <button id="enable-all" class="btn btn-primary">Enable All</button>
+                    <button id="disable-all" class="btn btn-secondary">Disable All</button>
+                    <button id="restore-original" class="btn btn-secondary">Restore Original</button>
+                    <button id="save-new-css" class="btn btn-success">Save as New CSS</button>
+                    <button id="overwrite-css" class="btn btn-warning">Overwrite Original CSS</button>
+                </div>
+
+                <div class="filter-controls">
+                    <input type="text" id="search-input" placeholder="Search selectors..." class="search-input">
+                    <div class="filter-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="show-unused" checked>
+                            Show unused only
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="show-disabled" checked>
+                            Show disabled only
+                        </label>
+                    </div>
+                </div>
+
+                <div class="selector-list" id="selector-list">
+                    <div class="loading">Loading selectors...</div>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <div class="preview-header">
+                    <h3>Preview</h3>
+                    <select id="html-file-select" class="html-select">
+                        <option value="">Select HTML file to preview</option>
+                    </select>
+                </div>
+                <div class="preview-container">
+                    <iframe id="preview-iframe" src="about:blank"></iframe>
+                    <div class="no-preview">
+                        <p>Select an HTML file to preview changes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-message" id="status-message">Ready</div>
+            <div class="project-info">
+                <span id="project-path"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Save Modal -->
+    <div id="save-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Save Cleaned CSS</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="filename-section">
+                    <label for="filename-input">Filename:</label>
+                    <input type="text" id="filename-input" value="cleaned.css" class="filename-input">
+                </div>
+                
+                <div id="overwrite-warning" class="overwrite-warning" style="display: none;">
+                    <div class="warning-icon">⚠️</div>
+                    <div class="warning-text">
+                        <p><strong>Warning: This will overwrite your original CSS files!</strong></p>
+                        <p>The following files will be replaced:</p>
+                        <ul id="files-to-overwrite"></ul>
+                        <p>Make sure you have backups before proceeding.</p>
+                    </div>
+                </div>
+                
+                <div class="save-stats">
+                    <p>Current statistics:</p>
+                    <ul>
+                        <li>Active selectors: <span id="save-active-count">0</span></li>
+                        <li>Disabled selectors: <span id="save-disabled-count">0</span></li>
+                        <li>Estimated size reduction: <span id="size-reduction">0%</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="confirm-save" class="btn btn-success">Save</button>
+                <button id="cancel-save" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
