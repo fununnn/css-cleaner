@@ -1,7 +1,7 @@
 {
-  "name": "css-cleaner",
+  "name": "css-unused-cleaner",
   "version": "1.0.0",
-  "description": "CLI tool to efficiently detect and remove unused CSS selectors with browser-based UI",
+  "description": "Detect and remove unused CSS selectors with intuitive browser UI. Analyze HTML/CSS files and safely clean up unused styles with real-time preview.",
   "main": "cli.js",
   "bin": {
     "css-cleaner": "./cli.js"
@@ -15,11 +15,17 @@
   },
   "keywords": [
     "css",
-    "cleanup",
-    "unused",
-    "purge",
-    "cli",
-    "static-site"
+    "css-optimization",
+    "unused-css",
+    "css-cleanup",
+    "purge-css",
+    "css-analyzer",
+    "cli-tool",
+    "web-performance",
+    "static-site",
+    "build-tools",
+    "frontend-tools",
+    "css-minifier"
   ],
   "author": "CSS Cleaner Team",
   "license": "MIT",
@@ -44,9 +50,10 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "homepage": "https://github.com/css-cleaner/css-cleaner#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/css-cleaner/css-cleaner.git"
+    "url": "git+https://github.com/css-cleaner/css-cleaner.git"
   },
   "bugs": {
     "url": "https://github.com/css-cleaner/css-cleaner/issues"
