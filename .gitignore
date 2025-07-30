@@ -135,3 +135,10 @@ session.json
 
 # Test output
 test-output/
+
+# Development files (keep in repo but exclude from production)
+test-cases/
+test-site/
+CLAUDE.md
+GITHUB_SETUP.md
+AWESOME_PR.md

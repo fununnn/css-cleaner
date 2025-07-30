@@ -1,6 +1,6 @@
 {
   "name": "css-unused-cleaner",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Detect and remove unused CSS selectors with intuitive browser UI. Analyze HTML/CSS files and safely clean up unused styles with real-time preview.",
   "main": "cli.js",
   "bin": {
@@ -50,18 +50,19 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "homepage": "https://github.com/css-cleaner/css-cleaner#readme",
+  "homepage": "https://github.com/fununnn/css-cleaner#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/css-cleaner/css-cleaner.git"
+    "url": "git+https://github.com/fununnn/css-cleaner.git"
   },
   "bugs": {
-    "url": "https://github.com/css-cleaner/css-cleaner/issues"
+    "url": "https://github.com/fununnn/css-cleaner/issues"
   },
   "files": [
     "cli.js",
-    "analyzer.js",
+    "analyzer.js", 
     "server.js",
-    "dist/"
+    "dist/",
+    "README.md"
   ]
 }
